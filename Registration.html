@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./Registration.css" />
+
+</head>
+<body>
+<div class="container">
+<form class="form">
+  <h1>Registro</h1>
+  <p>Complete este formulario para registrarse</p>
+  <form>
+    <!-- Contact Details -->
+    <fieldset class="first-section">
+      <legend>Detalles de Contacto</legend>
+      <label for="username">Username</label>
+      <input type="text" name="username" id="username" placeholder="Username" autofocus required> <br><br>
+      <label for="name">Nombre</label>
+      <input type="text" id="name" name="name" autofocus placeholder="Pedro Perez" autocomplete="on" required> <br><br>
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="usuario@mail.com" required> <br><br>
+      <label for="tel">Telefono</label>
+      <input type="tel" id="tel" placeholder="+569 98765432"> <br><br>
+    </fieldset>
+    <!-- Personal Information -->
+    <fieldset class="second-section">
+      <legend>Información Personal</legend>
+      <label for="dob">Fecha de Nacimiento</label>
+      <input type="date" id="dob"> <br><br>
+      <label for="gender">Genero</label>
+      <input list="genders" name="gender" id="gender">
+      <datalist id="genders">
+        <option value="Femenino">
+        <option value="Masculino">
+        <option value="Otro">
+      </datalist><br><br>
+
+    </fieldset>
+    <!-- Preferred Language -->
+    <div class="terms">
+      <input type="checkbox" id="scales" name="scales" class="checkbox">
+      <label for="scales">He leido los terminos y condiciones de servicio</label>
+    </div>
+    <button>Enviar</button>
+  </form>
+</form>
+</div>
+</body>
+</html>
